@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Guardians</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/TheGuardian_Logo_VIE 2.png" rel="icon">
+  <link href="assets/img/TheGuardian_Logo_VIE 2.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Dewi
+  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+</head>
+<script>
+  function toggleYears() {
+    document.body.classList.toggle('show-older');
+  }
+</script>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <!-- 
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+    
+        <h1 class="sitename">Dewi</h1>
+      </a> -->
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/Logo=name.png" alt="Dewi Logo" style="height: 300px;">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active" style=" padding: 10px 20px; ">TRANG CHỦ</a></li>
+          <li><a href="tin-tuc.html" class="active" style=" padding: 10px 20px; ">TIN TỨC</a></li>
+          <li><a href="cam-nang.html" class="active" style=" padding: 10px 20px; ">CẨM NANG</a></li>
+          <li><a href="cskh.html" class="active" style=" padding: 10px 20px; ">HỖ TRỢ</a></li>
+          <li class="login-item">
+            <img src="assets/img/Icon.svg" alt="Globe Icon" class="icon-globe">
+            <button class="button-dow" id="openPopup">ĐĂNG NHẬP</button>
+          </li>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="main">
+
+
+
+    <!-- Portfolio Details Section -->
+    <section class="helpdesk">
+      <div class="helpdesk__container">
+
+        <!-- HEADER -->
+        <div class="helpdesk__header">
+          <img src="assets/img/TheGuardian_Logo_VIE 3.png" alt="Support Icon" class="helpdesk__icon">
+
+          <div class="helpdesk__text">
+            <h1 class="helpdesk__title">HỖ TRỢ NGƯỜI DÙNG</h1>
+            <p class="helpdesk__desc">
+              Để được hỗ trợ nhanh chóng, vui lòng cung cấp thông tin và nội dung bạn cần hỗ trợ tại đây.
+              Ngoài ra, bạn cũng có thể gửi email trực tiếp cho chúng tôi theo địa chỉ
+            </p>
+            <p class="helpdesk__email">&lt;cskh@vkentertainment.net&gt;</p>
+          </div>
+        </div>
+
+        <!-- LEFT COLUMN (FORM) -->
+        <div class="helpdesk__left">
+          <form class="helpdesk-form" action="forms/contact.php" method="post" enctype="multipart/form-data">
+            <div class="form__group">
+              <label for="hd-user" class="form__label">ID NGƯỜI DÙNG</label>
+              <input id="hd-user" name="user_id" type="text" class="form__control" placeholder="Nhập ID người dùng"
+                required>
+            </div>
+
+            <div class="form__group">
+              <label for="hd-email" class="form__label">EMAIL NHẬN PHẢN HỒI</label>
+              <input id="hd-email" name="email" type="email" class="form__control" placeholder="Nhập email" required>
+            </div>
+
+            <div class="form__group">
+              <label for="hd-subject" class="form__label">TIÊU ĐỀ</label>
+              <input id="hd-subject" name="subject" type="text" class="form__control" placeholder="Nhập tiêu đề hỗ trợ"
+                required>
+            </div>
+
+            <div class="form__group">
+              <label for="hd-message" class="form__label">NỘI DUNG</label>
+              <textarea id="hd-message" name="message" rows="5" class="form__textarea"
+                placeholder="Nhập nội dung cần hỗ trợ" required></textarea>
+            </div>
+
+            <div class="form__group">
+              <span class="form__label">TỆP ĐÍNH KÈM</span>
+              <div class="uploader" id="hd-drop">
+                <input id="hd-file" name="attachments[]" type="file" class="uploader__input" multiple hidden>
+                <div class="uploader__text">
+                  <i class="bi bi-paperclip"></i>
+                  <span>Kéo tệp tin để bắt đầu tải lên hoặc nhấn</span>
+                </div>
+                <button type="button" class="uploader__btn" id="hd-trigger">Thêm tệp tin</button>
+              </div>
+              <div id="file-preview-container" style="margin-top:15px;"></div>
+              <div id="file-count" style="margin-top:8px;color:#ccc;font-size:13px;"></div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- RIGHT COLUMN (IMAGE) -->
+        <div class="helpdesk__right">
+          <img src="assets/img/image-group-cskh.png" alt="Support Art" class="helpdesk__art">
+        </div>
+
+      </div>
+    </section>
+    </div>
+
+    <section id="hero" class="hero section"
+      style="margin: 0; padding: 0; background-image: url(assets/img/br-season.jpeg); background-size: cover; background-position: center;">
+
+      <div class="body-season" style="text-align:center; padding: 50px 0;">
+
+        <!-- Hình Season -->
+        <div class="container-season">
+          <img src="assets/img/season 2025.png" alt="">
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown" id="countdown">
+          <div class="time-box">
+            <div id="days" style="font-family: 'Times New Roman', Times, serif;">00</div>
+            <span style="font-family: 'Times New Roman', Times, serif;">NGÀY</span>
+          </div>
+          <div class="divider"></div>
+          <div class="time-box">
+            <div id="hours" style="font-family: 'Times New Roman', Times, serif;">00</div>
+            <span style="font-family: 'Times New Roman', Times, serif;">GIỜ</span>
+          </div>
+          <div class="divider"></div>
+          <div class="time-box">
+            <div id="minutes" style="font-family: 'Times New Roman', Times, serif;">00</div>
+            <span style="font-family: 'Times New Roman', Times, serif;">PHÚT</span>
+          </div>
+          <div class="divider"></div>
+          <div class="time-box">
+            <div id="seconds" style="font-family: 'Times New Roman', Times, serif;">00</div>
+            <span style="font-family: 'Times New Roman', Times, serif;">GIÂY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="tv-footer" style="font-family: 'Times New Roman', Times, serif;">
+    <div class="tv-top">
+      <div class="tv-left">
+        <img src="assets/img/TheGuardian_Logo_VIE 3.png" alt="sword logo" class="tv-sword-large">
+      </div>
+
+      <div class="tv-main">
+        <div class="tv-welcome" style="font-family: 'Times New Roman', Times, serif;">CHÀO MỪNG CÁC VỆ THẦN !</div>
+
+        <h1 class="tv-heading">
+          KẾT NỐI VỚI
+          <span>THẾ GIỚI VỆ THẦN</span>
+        </h1>
+
+        <p class="tv-sub" style="font-family: 'Times New Roman', Times, serif;">
+          Cập nhật sắc lệnh vệ thần hàng tuần để không bỏ lỡ tin tức quan trọng và cơ hội vàng sở hữu NFT trước ra mắt!
+          Đây là chìa khóa để bạn dẫn đầu trong thế giới vệ thần!
+        </p>
+
+        <form class="tv-form" action="#" onsubmit="return false;">
+          <div class="tv-inputs">
+            <label class="lbl">
+              <div class="lbl-title">Tên của bạn</div>
+              <input class="tv-input" type="text" placeholder="Nhập tên của bạn">
+            </label>
+
+            <label class="lbl">
+              <div class="lbl-title">Email của bạn</div>
+              <input class="tv-input" type="email" placeholder="Nhập email của bạn">
+            </label>
+          </div>
+
+          <div class="tv-submit-wrap">
+            <button class="tv-btn" type="submit">ĐĂNG KÝ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- separator row: nằm giữa, nội dung: nhỏ logo (bên trái), nav (giữa), socials (phải) -->
+    <div class="tv-sep-row">
+      <div class="sep-inner">
+        <div class="sep-logo">
+          <img src="assets/img/Logo=name.png" alt="small sword" class="tv-sword-small">
+        </div>
+
+        <nav class="sep-nav">
+          <a href="#">TRANG CHỦ</a>
+          <a href="#">GIỚI THIỆU</a>
+          <a href="#">BẢNG XẾP HẠNG</a>
+          <a href="#">HỖ TRỢ</a>
+        </nav>
+
+        <div class="sep-socials">
+          <a href="#" class="ic" style="color: #ECC689; font-size: 16px;"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="ic" style="color: #ECC689; font-size: 16px;"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="ic" style="color: #ECC689; font-size: 16px;"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="ic" style="color: #ECC689; font-size: 16px;"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-sep"></div>
+
+    <div class="tv-bottom">
+      <div class="b-center">Bản quyền thuộc về @VKENTERTAINMENTJSC.</div>
+      <div class="b-right">CHÍNH SÁCH QUYỀN RIÊNG TƯ | ĐIỀU KHOẢN SỬ DỤNG</div>
+    </div>
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script>
+const fileInput = document.getElementById('hd-file');
+const dropZone = document.getElementById('hd-drop');
+const previewContainer = document.getElementById('file-preview-container');
+const fileCount = document.getElementById('file-count');
+const triggerBtn = document.getElementById('hd-trigger');
+const placeholder = document.getElementById('file-placeholder');
+
+let currentFiles = [];
+
+function formatFileSize(bytes) {
+  if (bytes < 1024) return bytes + ' bytes';
+  else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+  else return (bytes / 1048576).toFixed(1) + ' MB';
+}
+
+function renderFileList() {
+  previewContainer.innerHTML = '';
+  currentFiles.forEach((file, index) => {
+    const fileDiv = document.createElement('div');
+    fileDiv.className = 'file-preview';
+    fileDiv.style.cssText = 'display:flex;align-items:center;margin-bottom:10px;border:1px solid #444;padding:8px;border-radius:6px;background:#222;';
+
+    fileDiv.innerHTML = `
+      <div style="margin-right:10px;font-size:20px;">📄</div>
+      <div style="flex:1;">
+        <div style="font-weight:bold;color:#fff;">${file.name}</div>
+        <div style="color:#aaa;font-size:13px;">${formatFileSize(file.size)}</div>
+      </div>
+      <div class="remove-btn" style="margin-left:10px;cursor:pointer;color:red;font-weight:bold;">✖</div>
+    `;
+
+    fileDiv.querySelector('.remove-btn').addEventListener('click', () => {
+      currentFiles.splice(index, 1);
+      updateFileInput();
+      renderFileList();
+    });
+
+    previewContainer.appendChild(fileDiv);
+  });
+
+  fileCount.textContent = `Tổng số file: ${currentFiles.length}`;
+
+  // Ẩn/hiện placeholder
+  placeholder.style.display = currentFiles.length > 0 ? 'none' : 'block';
+}
+
+function updateFileInput() {
+  const dataTransfer = new DataTransfer();
+  currentFiles.forEach(file => dataTransfer.items.add(file));
+  fileInput.files = dataTransfer.files;
+}
+
+fileInput.addEventListener('change', (e) => {
+  currentFiles = currentFiles.concat(Array.from(e.target.files));
+  updateFileInput();
+  renderFileList();
+});
+
+triggerBtn.addEventListener('click', () => fileInput.click());
+
+dropZone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  currentFiles = currentFiles.concat(Array.from(e.dataTransfer.files));
+  updateFileInput();
+  renderFileList();
+});
+
+// Khi click vào dropZone thì cũng ẩn placeholder
+dropZone.addEventListener('click', () => {
+  placeholder.style.display = 'none';
+});
+</script>
+
+  <script>
+    // ---- COUNTDOWN SCRIPT ----
+    // Ngày đích (VD: 15/09/2025 20:00:00)
+    const targetDate = new Date("Sep 15, 2025 20:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        document.getElementById("countdown").innerHTML = "<h2 style='color:#fff'>Sự kiện đã bắt đầu!</h2>";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days.toString().padStart(2, "0");
+      document.getElementById("hours").innerText = hours.toString().padStart(2, "0");
+      document.getElementById("minutes").innerText = minutes.toString().padStart(2, "0");
+      document.getElementById("seconds").innerText = seconds.toString().padStart(2, "0");
+    }
+
+    // Cập nhật mỗi giây
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+
+    
+  </script>
+</body>
+
+</html>
