@@ -35,7 +35,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/signup-in.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Dewi
   * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
@@ -52,7 +52,8 @@
   }
 </script>
 
-<body class="index-page">
+<body class="index-page"
+  style=" background-image: url(assets/img/volcano-01.png); background-size: cover; background-position: center;">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -73,7 +74,7 @@
           <li><a href="cskh.html" class="active" style=" padding: 10px 20px; ">HỖ TRỢ</a></li>
           <li class="login-item">
             <img src="assets/img/Icon.svg" alt="Globe Icon" class="icon-globe">
-            <button class="button-dow" id="openPopup">ĐĂNG NHẬP</button>
+
           </li>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -86,74 +87,123 @@
 
 
     <!-- Portfolio Details Section -->
-    <section class="helpdesk">
-      <div class="helpdesk__container">
+    <section class="register-section">
+      <div class="register-box">
 
-        <!-- HEADER -->
-        <div class="helpdesk__header">
-          <img src="assets/img/TheGuardian_Logo_VIE 3.png" alt="Support Icon" class="helpdesk__icon">
+        <!-- Logo -->
+        <div class="register-logo">
+          <img src="assets/img/TheGuardian_Logo_VIE 3.png" alt="Logo">
+        </div>
 
-          <div class="helpdesk__text">
-            <h1 class="helpdesk__title" style="font-family: 'Times New Roman', Times, serif;">HỖ TRỢ NGƯỜI DÙNG</h1>
-            <p class="helpdesk__desc" style="font-family: 'Times New Roman', Times, serif;">
-              Để được hỗ trợ nhanh chóng, vui lòng cung cấp thông tin và nội dung bạn cần hỗ trợ tại đây.
-              Ngoài ra, bạn cũng có thể gửi email trực tiếp cho chúng tôi theo địa chỉ
+        <!-- Tabs -->
+        <div class="register-tabs">
+          <button class="register-tab inactive">ĐĂNG NHẬP</button>
+          <button class="register-tab active">ĐĂNG KÝ</button>
+        </div>
+
+        <!-- Form -->
+        <form class="register-form">
+
+          <div class="register-field">
+            <label for="fullname">TÊN CỦA BẠN</label>
+            <input id="fullname" type="text" placeholder="Nhập tên của bạn" required>
+          </div>
+
+          <div class="register-field">
+            <label for="dob">NGÀY SINH</label>
+            <input id="dob" type="date" placeholder="Nhập ngày sinh của bạn" required>
+          </div>
+
+          <div class="register-field">
+            <label for="phone">SỐ ĐIỆN THOẠI</label>
+            <input id="phone" type="tel" placeholder="Nhập số điện thoại của bạn" required>
+          </div>
+
+          <div class="register-field">
+            <label for="email">EMAIL</label>
+            <input id="email" type="email" placeholder="Nhập email của bạn" required>
+          </div>
+
+          <div class="register-field">
+            <label for="username">TÊN ĐĂNG NHẬP</label>
+            <input id="username" type="text" placeholder="Nhập tên đăng nhập của bạn" required>
+          </div>
+
+          <div class="register-field">
+            <label for="password">MẬT KHẨU</label>
+            <div class="register-password">
+              <input id="password" type="password" placeholder="Nhập mật khẩu của bạn" required>
+              <span class="register-toggle">🙈</span>
+            </div>
+            <p class="register-hint">
+              * Mật khẩu gồm tối thiểu 8 ký tự, bao gồm chữ cái viết hoa, viết thường, chữ số và ký tự đặc biệt
             </p>
-            <p class="helpdesk__email" style="font-family: 'Times New Roman', Times, serif;">&lt;cskh@vkentertainment.net&gt;</p>
+          </div>
+
+          <div class="register-field">
+            <label for="confirm-password">XÁC NHẬN MẬT KHẨU</label>
+            <div class="register-password">
+              <input id="confirm-password" type="password" placeholder="Xác nhận mật khẩu của bạn" required>
+              <span class="register-toggle">🙈</span>
+            </div>
+          </div>
+
+          <div class="register-check">
+            <input id="age-check" type="checkbox" required>
+            <label for="age-check"
+              style="font-family: 'Times New Roman', Times, serif; color:#ECC689; font-size: 14px;">XÁC NHẬN NGƯỜI DÙNG
+              TRÊN 18 TUỔI</label>
+          </div>
+
+          <button type="submit" class="register-submit">ĐĂNG KÝ</button>
+        </form>
+        <div id="verify-modal" class="modal" style="display:none;">
+          <div class="modal-content">
+            <img src="assets/img/TheGuardian_Logo_VIE 3.png" alt="icon" style="height:80px; margin-bottom:15px;">
+            <h2 style="color:#fff; margin-bottom:10px;">XÁC THỰC TÀI KHOẢN</h2>
+
+            <div>
+              <label style="color:#d1b97f; float:left;">EMAIL / SỐ ĐIỆN THOẠI</label>
+              <input type="text" placeholder="Nhập email hoặc số điện thoại của bạn">
+              <button>GỬI LẠI MÃ</button>
+            </div>
+
+            <div style="margin-top:15px;">
+              <label style="color:#d1b97f; float:left;">MÃ XÁC THỰC</label>
+              <input type="text" placeholder="Nhập mã xác thực từ email/sđt">
+              <button>ĐĂNG KÝ</button>
+            </div>
+
+            <button id="close-modal" style="margin-top:20px;">Đóng</button>
           </div>
         </div>
 
-        <!-- LEFT COLUMN (FORM) -->
-        <div class="helpdesk__left">
-          <form class="helpdesk-form" action="forms/contact.php" method="post" enctype="multipart/form-data">
-            <div class="form__group">
-              <label for="hd-user" class="form__label">ID NGƯỜI DÙNG</label>
-              <input id="hd-user" name="user_id" type="text" class="form__control" placeholder="Nhập ID người dùng"
-                required>
-            </div>
-
-            <div class="form__group">
-              <label for="hd-email" class="form__label">EMAIL NHẬN PHẢN HỒI</label>
-              <input id="hd-email" name="email" type="email" class="form__control" placeholder="Nhập email" required>
-            </div>
-
-            <div class="form__group">
-              <label for="hd-subject" class="form__label">TIÊU ĐỀ</label>
-              <input id="hd-subject" name="subject" type="text" class="form__control" placeholder="Nhập tiêu đề hỗ trợ"
-                required>
-            </div>
-
-            <div class="form__group">
-              <label for="hd-message" class="form__label">NỘI DUNG</label>
-              <textarea id="hd-message" name="message" rows="5" class="form__textarea"
-                placeholder="Nhập nội dung cần hỗ trợ" required></textarea>
-            </div>
-
-            <div class="form__group">
-              <span class="form__label">TỆP ĐÍNH KÈM</span>
-              <div class="uploader" id="hd-drop">
-                <input id="hd-file" name="attachments[]" type="file" class="uploader__input" multiple hidden>
-                <div class="uploader__text">
-                  <i class="bi bi-paperclip"></i>
-                  <span>Kéo tệp tin để bắt đầu tải lên hoặc nhấn</span>
-                </div>
-                <button type="button" class="uploader__btn" id="hd-trigger">Thêm tệp tin</button>
-              </div>
-              <div id="file-preview-container" style="margin-top:15px;"></div>
-              <div id="file-count" style="margin-top:8px;color:#ccc;font-size:13px;"></div>
-            </div>
-
-          </form>
+        <!-- Social Register -->
+        <div class="register-social">
+          <p class="register-social-title">ĐĂNG KÝ BẰNG</p>
+          <div class="register-social-icons">
+            <img src="assets/img/google-logo.png" alt="Google">
+            <img src="assets/img/facebook-logo.png" alt="Facebook">
+            <img src="assets/img/appleID-logo.png" alt="Apple">
+            <img src="assets/img/zalo-logo.png" alt="Zalo">
+          </div>
         </div>
 
-        <!-- RIGHT COLUMN (IMAGE) -->
-        <div class="helpdesk__right">
-          <img src="assets/img/image-group-cskh.png" alt="Support Art" class="helpdesk__art">
-        </div>
 
       </div>
     </section>
+
+    <div class="register-apps">
+      <a href=""><img src="assets/img/Facebook.svg" alt=""></a>
+      <a href=""><img src="assets/img/Icon-youtube.svg" alt=""></a>
+      <a href=""><img src="assets/img/Icon-insta.svg" alt=""></a>
+      <a href=""><img src="assets/img/qr1-1.svg" alt=""></a>
+      <a href="#"><img src="assets/img/testimonials/gg play.svg" alt="App Store"></a>
+      <a href=""><img src="assets/img/qr1-1.svg" alt=""></a>
+      <a href="#"><img src="assets/img/testimonials/appstore.svg" alt="Google Play"></a>
+
     </div>
+
 
     <section id="hero" class="hero section"
       style="margin: 0; padding: 0; background-image: url(assets/img/br-season.jpeg); background-size: cover; background-position: center;">
@@ -244,7 +294,7 @@
         <nav class="sep-nav">
           <a href="#">TRANG CHỦ</a>
           <a href="#">GIỚI THIỆU</a>
-          <a href="index.html#">BẢNG XẾP HẠNG</a>
+          <a href="#">BẢNG XẾP HẠNG</a>
           <a href="#">HỖ TRỢ</a>
         </nav>
 
@@ -285,29 +335,29 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/lang.js"></script>
   <script>
-const fileInput = document.getElementById('hd-file');
-const dropZone = document.getElementById('hd-drop');
-const previewContainer = document.getElementById('file-preview-container');
-const fileCount = document.getElementById('file-count');
-const triggerBtn = document.getElementById('hd-trigger');
-const placeholder = document.getElementById('file-placeholder');
+    const fileInput = document.getElementById('hd-file');
+    const dropZone = document.getElementById('hd-drop');
+    const previewContainer = document.getElementById('file-preview-container');
+    const fileCount = document.getElementById('file-count');
+    const triggerBtn = document.getElementById('hd-trigger');
+    const placeholder = document.getElementById('file-placeholder');
 
-let currentFiles = [];
+    let currentFiles = [];
 
-function formatFileSize(bytes) {
-  if (bytes < 1024) return bytes + ' bytes';
-  else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
-  else return (bytes / 1048576).toFixed(1) + ' MB';
-}
+    function formatFileSize(bytes) {
+      if (bytes < 1024) return bytes + ' bytes';
+      else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+      else return (bytes / 1048576).toFixed(1) + ' MB';
+    }
 
-function renderFileList() {
-  previewContainer.innerHTML = '';
-  currentFiles.forEach((file, index) => {
-    const fileDiv = document.createElement('div');
-    fileDiv.className = 'file-preview';
-    fileDiv.style.cssText = 'display:flex;align-items:center;margin-bottom:10px;border:1px solid #444;padding:8px;border-radius:6px;background:#222;';
+    function renderFileList() {
+      previewContainer.innerHTML = '';
+      currentFiles.forEach((file, index) => {
+        const fileDiv = document.createElement('div');
+        fileDiv.className = 'file-preview';
+        fileDiv.style.cssText = 'display:flex;align-items:center;margin-bottom:10px;border:1px solid #444;padding:8px;border-radius:6px;background:#222;';
 
-    fileDiv.innerHTML = `
+        fileDiv.innerHTML = `
       <div style="margin-right:10px;font-size:20px;">📄</div>
       <div style="flex:1;">
         <div style="font-weight:bold;color:#fff;">${file.name}</div>
@@ -316,47 +366,47 @@ function renderFileList() {
       <div class="remove-btn" style="margin-left:10px;cursor:pointer;color:red;font-weight:bold;">✖</div>
     `;
 
-    fileDiv.querySelector('.remove-btn').addEventListener('click', () => {
-      currentFiles.splice(index, 1);
+        fileDiv.querySelector('.remove-btn').addEventListener('click', () => {
+          currentFiles.splice(index, 1);
+          updateFileInput();
+          renderFileList();
+        });
+
+        previewContainer.appendChild(fileDiv);
+      });
+
+      fileCount.textContent = `Tổng số file: ${currentFiles.length}`;
+
+      // Ẩn/hiện placeholder
+      placeholder.style.display = currentFiles.length > 0 ? 'none' : 'block';
+    }
+
+    function updateFileInput() {
+      const dataTransfer = new DataTransfer();
+      currentFiles.forEach(file => dataTransfer.items.add(file));
+      fileInput.files = dataTransfer.files;
+    }
+
+    fileInput.addEventListener('change', (e) => {
+      currentFiles = currentFiles.concat(Array.from(e.target.files));
       updateFileInput();
       renderFileList();
     });
 
-    previewContainer.appendChild(fileDiv);
-  });
+    triggerBtn.addEventListener('click', () => fileInput.click());
 
-  fileCount.textContent = `Tổng số file: ${currentFiles.length}`;
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      currentFiles = currentFiles.concat(Array.from(e.dataTransfer.files));
+      updateFileInput();
+      renderFileList();
+    });
 
-  // Ẩn/hiện placeholder
-  placeholder.style.display = currentFiles.length > 0 ? 'none' : 'block';
-}
-
-function updateFileInput() {
-  const dataTransfer = new DataTransfer();
-  currentFiles.forEach(file => dataTransfer.items.add(file));
-  fileInput.files = dataTransfer.files;
-}
-
-fileInput.addEventListener('change', (e) => {
-  currentFiles = currentFiles.concat(Array.from(e.target.files));
-  updateFileInput();
-  renderFileList();
-});
-
-triggerBtn.addEventListener('click', () => fileInput.click());
-
-dropZone.addEventListener('drop', (e) => {
-  e.preventDefault();
-  currentFiles = currentFiles.concat(Array.from(e.dataTransfer.files));
-  updateFileInput();
-  renderFileList();
-});
-
-// Khi click vào dropZone thì cũng ẩn placeholder
-dropZone.addEventListener('click', () => {
-  placeholder.style.display = 'none';
-});
-</script>
+    // Khi click vào dropZone thì cũng ẩn placeholder
+    dropZone.addEventListener('click', () => {
+      placeholder.style.display = 'none';
+    });
+  </script>
 
   <script>
     // ---- COUNTDOWN SCRIPT ----
@@ -388,8 +438,98 @@ dropZone.addEventListener('click', () => {
     updateCountdown();
 
 
-    
+
   </script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".register-form");
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirm-password");
+    const toggleButtons = document.querySelectorAll(".register-toggle");
+
+    // Toggle show/hide password
+    toggleButtons.forEach(toggle => {
+      toggle.addEventListener("click", function () {
+        const input = this.previousElementSibling;
+        if (input.type === "password") {
+          input.type = "text";
+          this.textContent = "👁️";
+        } else {
+          input.type = "password";
+          this.textContent = "🙈";
+        }
+      });
+    });
+
+    // Form validation
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Lấy dữ liệu
+      const fullname = document.getElementById("fullname").value.trim();
+      const dob = document.getElementById("dob").value;
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const username = document.getElementById("username").value.trim();
+      const password = passwordInput.value.trim();
+      const confirmPassword = confirmPasswordInput.value.trim();
+      const ageCheck = document.getElementById("age-check").checked;
+
+      // Kiểm tra các trường
+      if (!fullname || !dob || !phone || !email || !username || !password || !confirmPassword) {
+        alert("Vui lòng nhập đầy đủ thông tin!");
+        return;
+      }
+
+      // Kiểm tra mật khẩu
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      if (!passwordRegex.test(password)) {
+        alert("Mật khẩu phải có tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt!");
+        return;
+      }
+
+      // Xác nhận mật khẩu
+      if (password !== confirmPassword) {
+        alert("Mật khẩu xác nhận không khớp!");
+        return;
+      }
+
+      // Check tuổi >= 18
+      const birthDate = new Date(dob);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      if (age < 18) {
+        alert("Bạn phải trên 18 tuổi để đăng ký!");
+        return;
+      }
+
+      if (!ageCheck) {
+        alert("Bạn phải xác nhận trên 18 tuổi!");
+        return;
+      }
+
+      // 👉 Nếu qua hết check thì mở popup xác minh
+      document.getElementById("verify-modal").style.display = "flex";
+
+      // Nếu muốn reset form sau khi mở popup thì bỏ comment dòng dưới
+      // form.reset();
+    });
+
+    // Đóng modal (nếu có nút đóng trong modal)
+    const closeBtn = document.getElementById("close-modal");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        document.getElementById("verify-modal").style.display = "none";
+      });
+    }
+  });
+</script>
+
 </body>
 
 </html>
