@@ -507,6 +507,7 @@ span {
 }
 
 #navmenu ul li button.button-dow {
+  font-family: 'Times New Roman', Times, serif;
   background: #EDC990;
   color: #233D4D;
   font-weight: bold;
@@ -772,7 +773,7 @@ span {
 
 .title-section h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 44px;
+  font-size: 50px;
   margin: 0;
 
   font-weight: 700;
@@ -787,7 +788,7 @@ span {
 
 .subtitle-right {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 32px;
+  font-size: 22px;
   text-align: center;
   padding-bottom: 12px;
   color: #3A3C42;
@@ -966,10 +967,8 @@ body {
 }
 
 .tv-sword-large {
-  width: 160px;
-  /* Adjust size as needed */
+  width: 230px;
   max-width: 100%;
-  /* Ensures the logo scales down if the column becomes too narrow */
   display: block;
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.6));
 }
@@ -977,12 +976,14 @@ body {
 /* Main content area */
 .tv-main {
   color: var(--gold);
+ transform: translateX(40px);
+ 
 }
 
 .tv-welcome {
   color: #ECC689;
   text-align: left;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 6px;
@@ -992,7 +993,7 @@ body {
 .tv-heading {
   margin: 0;
   font-family: "trajanPro3", serif;
-  font-size: 44px;
+  font-size: 30px;
   line-height: 125%;
   font-weight: bold;
   color: #ECC689;
@@ -1007,8 +1008,8 @@ body {
 .tv-sub {
   margin: 12px 0 18px 0;
   color: #ECC689;
-  max-width: 740px;
-  font-size: 24px;
+  max-width: 620px;
+  font-size: 22px;
   line-height: 150%;
   font-family: "trajanPro3", serif;
 }
@@ -1017,8 +1018,7 @@ body {
 .tv-form {
   width: 100%;
   max-width: 600px;
-  /* Set a max-width for the form */
-}
+} 
 
 .tv-inputs {
   display: flex;
@@ -1346,6 +1346,7 @@ body {
 
 .card-content-2 h3 {
   font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
   font-size: 40px;
   font-weight: bold;
   line-height: 1.4;
@@ -1683,7 +1684,7 @@ body {
 
 .news-container-guardian .meta {
   text-align: end;
-  font-size: 30px;
+  font-size: 22px;
   color: #49454F;
   border-top: 3px solid #49454F;
   
@@ -2545,23 +2546,28 @@ section,
 }
 
 .btn-more {
+  font-family: 'Times New Roman', Times, serif;
+float: right;
   display: inline-flex;
+  gap: 5px;
   align-items: center;
-  gap: 6px;
-  padding: 10px 18px;
-  background: #111;
-  color: #fff;
-  border-radius: 6px;
+  padding: 9px 16px;
+  border-radius: 22px;
+  background: transparent;
+  border: 1px solid #E5B464;
+  border-radius: 20px;
+  color: #E5B464;
   text-decoration: none;
+  font-weight: 600;
   font-size: 14px;
-  transition: 0.3s;
+  margin-top: 12px;
+  margin-right: 50px;
 }
 
 .btn-more:hover {
-  background: #ffcc00;
-  color: #000;
+  background: #E5B464;
+  color: #1e1e1e;
 }
-
 .btn-icon {
   width: 16px;
   height: 16px;
@@ -2570,25 +2576,27 @@ section,
 
 /* Nút xem thêm */
 .btn-more {
-  display: inline-flex;
-  /* để chữ + icon nằm cùng hàng */
-  align-items: center;
-  gap: 8px;
-  /* khoảng cách chữ với icon */
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: none;
-  border: 1px solid #ECC689;
-  color: #ECC689;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: 0.3s;
+  font-family: 'Times New Roman', Times, serif;
   float: right;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: 9px 16px;
+  border-radius: 22px;
+  background: transparent;
+  border: 1px solid #E5B464;
+  border-radius: 20px;
+  color: #E5B464;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-right: 50px;
 }
 
 .btn-more:hover {
-  background: #ffd700;
-  color: #2f2f2f;
+  background: #E5B464;
+  color: #1e1e1e;
 }
 
 .btn-more .btn-icon {
@@ -5710,22 +5718,16 @@ a.nav-link.active .icon-img {
   left: 50%;
   transform: rotateX(-15deg);
   transform-origin: top center;
-
   font-size: 22px;
   font-weight: 400;
-  /* giảm độ đậm để chữ mảnh hơn */
   font-family: "Times New Roman", serif;
-  /* font có nét thanh mảnh cổ điển */
   text-transform: uppercase;
   letter-spacing: 2px;
   white-space: nowrap;
-
   color: rgba(230, 210, 180, 0.26);
-  /* màu vàng nhạt hơi bạc */
   -webkit-text-stroke: 0.8px rgba(253, 253, 253, 0.8);
-  /* viền sáng */
   text-shadow: none;
-  /* bỏ shadow đậm, vì ảnh gốc chữ khá rõ nét trên nền */
+
 
   pointer-events: none;
   transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
@@ -5813,6 +5815,7 @@ a.nav-link.active .icon-img {
 }
 
 .gate-switch {
+  font-family: 'Times New Roman', Times, serif;
   padding: 12px 28px;
   border: 1px solid #d4af73;
   border-radius: 10px;
@@ -5906,7 +5909,7 @@ a.nav-link.active .icon-img {
 }
 
 .item-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.308);
   border: 1px solid rgba(212, 175, 115, 0.3);
   border-radius: 12px;
   padding: 15px;
@@ -5971,9 +5974,9 @@ a.nav-link.active .icon-img {
 }
 
 .money-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.308);
   border: 1px solid rgba(212, 175, 115, 0.3);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 25px;
   text-align: center;
   transition: all 0.35s ease;
@@ -5981,6 +5984,11 @@ a.nav-link.active .icon-img {
   font-size: 16px;
 }
 
+.money-card:hover{
+  background: rgba(212, 175, 115, 0.1);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(212, 175, 115, 0.3);
+}
 .money-card img {
   width: 90px;
   height: 90px;
