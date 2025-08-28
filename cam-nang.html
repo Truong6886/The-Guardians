@@ -90,24 +90,24 @@
               <div class="gu-card"><img src="assets/img/character=canon, state=zoom.png" alt=""></div>
               <div class="gu-name-floor">CANON SHOOTER</div>
             </div>
-            <div class="gu-item" data-char="holy">
-              <div class="gu-card"><img src="assets/img/character=holy, state=zoom.png" alt=""></div>
+            <div class="gu-item-2" data-char="holy">
+              <div class="gu-card-2"><img src="assets/img/character=holy, state=zoom.png" alt=""></div>
               <div class="gu-name-floor">HOLY KNIGHT</div>
             </div>
-            <div class="gu-item" data-char="warrior">
-              <div class="gu-card"><img src="assets/img/character=warrior, state=zoom.png" alt=""></div>
+            <div class="gu-item-3" data-char="warrior">
+              <div class="gu-card-3"><img src="assets/img/character=warrior, state=zoom.png" alt=""></div>
               <div class="gu-name-floor">WARRIOR</div>
             </div>
-            <div class="gu-item" data-char="assassin">
-              <div class="gu-card"><img src="assets/img/character=assasin, state=zoom.png" alt=""></div>
+            <div class="gu-item-4" data-char="assassin">
+              <div class="gu-card-4"><img src="assets/img/character=assasin, state=zoom.png" alt=""></div>
               <div class="gu-name-floor">ASSASSIN</div>
             </div>
-            <div class="gu-item" data-char="archer">
-              <div class="gu-card"><img src="assets/img/character=archer, state=zoom.png" alt=""></div>
+            <div class="gu-item-5" data-char="archer">
+              <div class="gu-card-5"><img src="assets/img/character=archer, state=zoom.png" alt=""></div>
               <div class="gu-name-floor">ARCHER</div>
             </div>
-            <div class="gu-item" data-char="mage">
-              <div class="gu-card"><img src="assets/img/character=mage, state=zoom.png" alt=""></div>
+            <div class="gu-item-6" data-char="mage">
+              <div class="gu-card-6"><img src="assets/img/character=mage, state=zoom.png" alt=""></div>
               <div class="gu-name-floor">MAGE</div>
             </div>
           </div>
@@ -712,128 +712,123 @@
   </script>
 
   <script>
-    const characters = {
-      canon: {
-        story: "Có kiến thức sâu rộng về máy móc và văn minh nhờ ảnh hưởng của ông nội, một kỹ sư cung đình trong thời kỳ hoàng kim của Vương Quốc Diot. Dù có vẻ ngoài đáng yêu và tính cách sôi nổi, cô lại sở hữu hỏa lực khủng khiếp trong chiến đấu. Có tin đồn rằng cô tham gia trận chiến để thử nghiệm vũ khí mạnh mẽ mới của mình.",
-        role: "Tấn công tầm xa, gây sát thương lớn bằng bom mạnh mẽ và sử dụng các loại thuốc hồi phục đặc chế.",
-        weapon: "Bom và pháo tầm xa"
-      },
-      holy: {
-        story: "Là một tu sĩ của Đại Thần Điện Yulla, thuộc Liên Minh Thần Thánh Asgard. Với đức tin và công lý vững chắc, Thánh Kỵ Sĩ luôn tiên phong trong mọi trận chiến để thanh tẩy thế giới khỏi những thế lực đen tối sau khi chứng kiến những thay đổi bất thường của lục địa.",
-        role: "Cận chiến, tấn công mạnh mẽ, có khả năng bảo vệ đồng đội",
-        weapon: "Đại kiếm"
-      },
-      warrior: {
-        story: " Sinh ra từ liên minh bộ tộc dã man, Chiến Binh từng có ước mơ trở thành học giả khi còn nhỏ. Tuy nhiên, sau những biến cố lớn của thế giới, anh ta đã cầm vũ khí và tham gia chiến trường để bảo vệ bộ tộc và những người thân yêu.",
-        role: "Tanker cận chiến, có khả năng chịu đựng mọi đòn tấn công của kẻ địch, bảo vệ đồng đội.",
-        weapon: " Khiên và rìu"
-      },
-      assassin: {
-        story: " Xuất thân từ tổ chức sát thủ bí ẩn của Vương Quốc Kaidan, Sát Thủ từng hoạt động như một mật vụ và được đồn đoán là một thợ săn tiền thưởng lạnh lùng. Dù có vẻ ngoài khắc kỷ, họ lại nổi tiếng là những người luôn giữ chữ tín và sẵn sàng xông pha tiền tuyến.",
-        role: "Cận chiến, nhanh nhẹn, khả năng gây sát thương cao trong chớp nhoáng.",
-        weapon: "Song kiếm và song đao"
-      },
-      archer: {
-        story: "Sử dụng các kỹ năng đa dạng và nhanh nhẹn để gây rối loạn chiến trường, bao gồm các kỹ năng diện rộng bắn nhiều mũi tên và kỹ năng sát thương lớn gây sát thương chí mạng..",
-        role: "Tấn công vật lý tầm xa, linh hoạt và nhanh nhẹn, né tránh đòn tấn công của kẻ thù và gây sát thương bằng các đòn đánh khó lường.",
-        weapon: "Cung"
-      },
-      mage: {
-        story: "Đến từ vùng biên của Đế Quốc Ma Đạo, một khu vực đã bị hố đen nuốt chửng. Pháp Sư thông minh từ nhỏ, sớm nắm vững kiến thức về nguyên tố và phép thuật, luôn dẫn dắt những người cùng lứa. Sau khi tự mình tu luyện trên dãy núi Valion, cô nhận ra những thay đổi của thế giới và tự nguyện tham gia chiến trường.",
-        role: "Tấn công tầm xa, gây sát thương diện rộng bằng phép thuật nguyên tố và có khả năng cản trở hành động của kẻ địch.",
-        weapon: "Phép thuật nguyên tố"
-      }
-    };
+   const characters = {
+  canon: {
+    story: "Có kiến thức sâu rộng về máy móc và văn minh nhờ ảnh hưởng của ông nội, một kỹ sư cung đình trong thời kỳ hoàng kim của Vương Quốc Diot. Dù có vẻ ngoài đáng yêu và tính cách sôi nổi, cô lại sở hữu hỏa lực khủng khiếp trong chiến đấu. Có tin đồn rằng cô tham gia trận chiến để thử nghiệm vũ khí mạnh mẽ mới của mình.",
+    role: "Tấn công tầm xa, gây sát thương lớn bằng bom mạnh mẽ và sử dụng các loại thuốc hồi phục đặc chế.",
+    weapon: "Bom và pháo tầm xa"
+  },
+  holy: {
+    story: "Là một tu sĩ của Đại Thần Điện Yulla, thuộc Liên Minh Thần Thánh Asgard. Với đức tin và công lý vững chắc, Thánh Kỵ Sĩ luôn tiên phong trong mọi trận chiến để thanh tẩy thế giới khỏi những thế lực đen tối sau khi chứng kiến những thay đổi bất thường của lục địa",
+    role: "Cận chiến, tấn công mạnh mẽ, có khả năng bảo vệ đồng đội",
+    weapon: "Đại kiếm"
+  },
+  warrior: {
+    story: "Sinh ra từ liên minh bộ tộc dã man, Chiến Binh từng có ước mơ trở thành học giả khi còn nhỏ. Tuy nhiên, sau những biến cố lớn của thế giới, anh ta đã cầm vũ khí và tham gia chiến trường để bảo vệ bộ tộc và những người thân yêu.",
+    role: "Tanker cận chiến, có khả năng chịu đựng mọi đòn tấn công của kẻ địch, bảo vệ đồng đội.",
+    weapon: "Khiên và rìu"
+  },
+  assassin: {
+    story: " Xuất thân từ tổ chức sát thủ bí ẩn của Vương Quốc Kaidan, Sát Thủ từng hoạt động như một mật vụ và được đồn đoán là một thợ săn tiền thưởng lạnh lùng. Dù có vẻ ngoài khắc kỷ, họ lại nổi tiếng là những người luôn giữ chữ tín và sẵn sàng xông pha tiền tuyến.",
+    role: "Cận chiến, nhanh nhẹn, khả năng gây sát thương cao trong chớp nhoáng.",
+    weapon: "Song kiếm và song đao"
+  },
+  archer: {
+    story: " Sử dụng các kỹ năng đa dạng và nhanh nhẹn để gây rối loạn chiến trường, bao gồm các kỹ năng diện rộng bắn nhiều mũi tên và kỹ năng sát thương lớn gây sát thương chí mạng.",
+    role: "Tấn công vật lý tầm xa, linh hoạt và nhanh nhẹn, né tránh đòn tấn công của kẻ thù và gây sát thương bằng các đòn đánh khó lường.",
+    weapon: "Cung"
+  },
+  mage: {
+    story: "Đến từ vùng biên của Đế Quốc Ma Đạo, một khu vực đã bị hố đen nuốt chửng. Pháp Sư thông minh từ nhỏ, sớm nắm vững kiến thức về nguyên tố và phép thuật, luôn dẫn dắt những người cùng lứa. Sau khi tự mình tu luyện trên dãy núi Valion, cô nhận ra những thay đổi của thế giới và tự nguyện tham gia chiến trường.",
+    role: "Tấn công tầm xa, gây sát thương diện rộng bằng phép thuật nguyên tố và có khả năng cản trở hành động của kẻ địch.",
+    weapon: "Phép thuật nguyên tố"
+  }
+};
 
-    const items = document.querySelectorAll('.gu-item');
-    const infoBox = document.getElementById('guInfo');
-    const storyEl = document.getElementById('guStory');
-    const roleEl = document.getElementById('guRole');
-    const weaponEl = document.getElementById('guWeapon');
+const items = document.querySelectorAll('[data-char]');
+const infoBox = document.getElementById('guInfo');
+const storyEl = document.getElementById('guStory');
+const roleEl = document.getElementById('guRole');
+const weaponEl = document.getElementById('guWeapon');
 
-    function showInfo(key) {
-      const d = characters[key]; if (!d) return;
-      storyEl.textContent = d.story;
-      roleEl.textContent = d.role;
-      weaponEl.textContent = d.weapon;
-      infoBox.hidden = false;
+function showInfo(key) {
+  const d = characters[key]; if (!d) return;
+  storyEl.textContent = d.story;
+  roleEl.textContent = d.role;
+  weaponEl.textContent = d.weapon;
+  infoBox.hidden = false;
+}
+
+// 🔒 item đang ghim
+let locked = null;
+
+// ======================
+// Khi load trang
+// ======================
+window.addEventListener("DOMContentLoaded", () => {
+  let lastChar = localStorage.getItem("lastCharacter");
+  let defaultItem = null;
+
+  if (lastChar) {
+    defaultItem = document.querySelector(`[data-char="${lastChar}"]`);
+  }
+  if (!defaultItem && items.length > 0) {
+    defaultItem = items[0];
+  }
+
+  if (defaultItem) {
+    const key = defaultItem.dataset.char;
+    defaultItem.classList.add("active");
+    showInfo(key);
+    locked = defaultItem;
+  }
+});
+
+items.forEach(it => {
+  const key = it.dataset.char;
+
+  // Hover tạm thời
+  it.addEventListener('mouseenter', () => {
+    if (!locked) {
+      showInfo(key);
+      it.classList.add('active');
     }
+  });
 
-    // 🔒 item đang ghim
-    let locked = null;
+  it.addEventListener('mouseleave', () => {
+    if (!locked) {
+      it.classList.remove('active');
+      infoBox.hidden = true;
+    }
+  });
 
-    // ======================
-    // Khi load trang
-    // ======================
-    window.addEventListener("DOMContentLoaded", () => {
-      let lastChar = localStorage.getItem("lastCharacter");
-      let defaultItem = null;
+  // Click để ghim
+  it.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (locked === it) {
+      it.classList.remove('active');
+      locked = null;
+      infoBox.hidden = true;
+      localStorage.removeItem("lastCharacter");
+      return;
+    }
+    items.forEach(i => i.classList.remove('active'));
+    it.classList.add('active');
+    showInfo(key);
+    locked = it;
+    localStorage.setItem("lastCharacter", key);
+  });
+});
 
-      if (lastChar) {
-        defaultItem = document.querySelector(`.gu-item[data-char="${lastChar}"]`);
-      }
-      if (!defaultItem && items.length > 0) {
-        defaultItem = items[0]; // nếu chưa có chọn, lấy nhân vật đầu tiên
-      }
-
-      if (defaultItem) {
-        const key = defaultItem.dataset.char;
-        defaultItem.classList.add("active");
-        showInfo(key);
-        locked = defaultItem;
-      }
-    });
-
-    items.forEach(it => {
-      const key = it.dataset.char;
-
-      // Hover tạm thời
-      it.addEventListener('mouseenter', () => {
-        if (!locked) {
-          showInfo(key);
-          it.classList.add('active'); // tạm cho hiệu ứng
-        }
-      });
-
-      it.addEventListener('mouseleave', () => {
-        if (!locked) {
-          it.classList.remove('active');
-          infoBox.hidden = true;
-        }
-      });
-
-      // Click để ghim
-      it.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (locked === it) {
-          // Bỏ ghim
-          it.classList.remove('active');
-          locked = null;
-          infoBox.hidden = true;
-          localStorage.removeItem("lastCharacter");
-          return;
-        }
-        // Bỏ ghim cái cũ
-        items.forEach(i => i.classList.remove('active'));
-        // Ghim cái mới
-        it.classList.add('active');
-        showInfo(key);
-        locked = it;
-
-        // 🔒 Lưu nhân vật đã chọn
-        localStorage.setItem("lastCharacter", key);
-      });
-    });
-
-    // Click ra ngoài bỏ ghim
-    document.addEventListener('click', () => {
-      if (locked) {
-        locked.classList.remove('active');
-        locked = null;
-        infoBox.hidden = true;
-        localStorage.removeItem("lastCharacter");
-      }
-    });
+// Click ra ngoài bỏ ghim
+document.addEventListener('click', () => {
+  if (locked) {
+    locked.classList.remove('active');
+    locked = null;
+    infoBox.hidden = true;
+    localStorage.removeItem("lastCharacter");
+  }
+});
 
   </script>
   <script>
