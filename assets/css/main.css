@@ -5667,106 +5667,21 @@ a.nav-link.active .icon-img {
 
 /* gu -cha */
 
-.gu-wrapper {
-  perspective: 2000px;
-  display: flex;
-  justify-content: center;
-  margin: 60px 0;
-  padding-top: 50px;
-}
-
-.gu-list {
-  display: flex;
-  gap: 40px;
-  transform-style: preserve-3d;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.gu-item {
-  position: relative;
-  transform: rotateY(-35deg) rotateX(-5deg) rotateZ(6deg);
-  transform-origin: center bottom;
-  transition: transform 0.2s ease, z-index 0.2s ease;
-  cursor: pointer;
-}
-
-.gu-item:hover {
-  transform: rotateY(-10deg) rotateX(5deg) scale(1.08) translateY(-20px);
-  z-index: 10;
-}
-
-.gu-card {
-  border: 2px solid gold;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.gu-card img {
-  display: block;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-}
-
-.gu-name-floor {
-  position: absolute;
-  bottom: -80px;
-  left: 50%;
-  transform: rotateX(-15deg);
-  transform-origin: top center;
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Times New Roman", serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  white-space: nowrap;
-  color: rgba(230, 210, 180, 0.26);
-  -webkit-text-stroke: 0.8px rgba(253, 253, 253, 0.8);
-  text-shadow: none;
-
-
-  pointer-events: none;
-  transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
-}
-
-.gu-item:hover .gu-name-floor,
-.gu-item.active .gu-name-floor {
-  color: #ffffff;
-  -webkit-text-stroke: 1px #ffffff38;
-}
-
-/* Hiệu ứng ảnh khi hover hoặc click */
-.gu-item:hover .gu-card img,
-.gu-item.active .gu-card img {
-
-  transition: 0.3s;
-}
-
-.gu-wrapper {
-  margin-bottom: 160px;
-  /* tạo khoảng trống phía dưới danh sách nhân vật */
-}
 
 .gu-thongtin {
 
-  margin-top: 40px;
+  margin-top: 80px;
   /* giữ khoảng cách so với phần trên */
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 20px;
   max-width: 900px;
-  margin-left: 220px;
+  margin-left: 450px;
   margin-right: auto;
   font-family: "Times New Roman", serif;
   line-height: 1.6;
   position: relative;
-  /* giữ nguyên vị trí trong flow */
   z-index: 1;
-  /* chắc chắn nằm dưới các card nhân vật */
 }
 
 .gu-thongtin h3 {
