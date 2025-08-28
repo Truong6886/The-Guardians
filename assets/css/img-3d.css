@@ -50,7 +50,7 @@
 .gu-name-floor {
   position: absolute;
   bottom: -30px;
-  left: 130%;
+  left: 115%;
   transform-style: preserve-3d;
   transform: rotateX(40deg) skewX(-30deg);
   transform-origin: top center;
@@ -60,8 +60,8 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   white-space: nowrap;
-  color: rgba(230, 210, 180, 0.26);
-  -webkit-text-stroke: 0.8px rgba(253, 253, 253, 0.8);
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px #EEBE70 ;
   text-shadow: none;
   pointer-events: none;
   transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
@@ -69,7 +69,7 @@
 
 .gu-item:hover .gu-name-floor,
 .gu-item.active .gu-name-floor {
-  color: #ffffff;
+  color: #EEBE70;
   -webkit-text-stroke: 1px #ffffff38;
 }
 
