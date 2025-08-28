@@ -126,7 +126,7 @@
 }
 .gu-item-2:hover .gu-name-floor,
 .gu-item-2.active .gu-name-floor {
-  color: #ffffff;
+  color: #EEBE70;
   -webkit-text-stroke: 1px #ffffff38;
 }
 
@@ -172,7 +172,7 @@
 
 .gu-item-3:hover .gu-name-floor,
 .gu-item-3.active .gu-name-floor {
-  color: #ffffff;
+  color: #EEBE70;
   -webkit-text-stroke: 1px #ffffff38;
 }
 /* -3 */
@@ -218,7 +218,7 @@
 
 .gu-item-4:hover .gu-name-floor,
 .gu-item-4.active .gu-name-floor {
-  color: #ffffff;
+color: #EEBE70;
   -webkit-text-stroke: 1px #ffffff38;
 }
 /* -4 */
@@ -263,7 +263,7 @@
 
 .gu-item-5:hover .gu-name-floor,
 .gu-item-5.active .gu-name-floor {
-  color: #ffffff;
+ color: #EEBE70;
   -webkit-text-stroke: 1px #ffffff38;
 }
 /* -5 */
@@ -307,7 +307,7 @@
 
 .gu-item-6:hover .gu-name-floor,
 .gu-item-6.active .gu-name-floor {
-  color: #ffffff;
+  color: #EEBE70;
   -webkit-text-stroke: 1px #ffffff38;
 }
 /* -6 */
