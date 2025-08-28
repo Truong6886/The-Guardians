@@ -5,6 +5,7 @@
   justify-content: center;
   margin: 60px 0;
   padding-top: 90px;
+  padding-right: 150px;
 }
 
 .gu-list {
@@ -36,8 +37,7 @@
    
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
+
 }
 
 .gu-card img {
@@ -109,8 +109,7 @@
    
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
+
 }
 
 .gu-card-2 img {
@@ -155,8 +154,7 @@
    
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
+
 }
 
 .gu-card-3 img {
@@ -201,8 +199,7 @@
    
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
+
 }
 
 .gu-card-4 img {
@@ -248,8 +245,7 @@
    
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
+
 }
 
 .gu-card-5 img {
@@ -294,8 +290,6 @@
    
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
 }
 
 .gu-card-6 img {
