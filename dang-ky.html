@@ -245,7 +245,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="tv-footer" style="font-family: 'Times New Roman', Times, serif;">
+ <footer class="tv-footer" style="font-family: 'Times New Roman', Times, serif;">
     <div class="tv-top">
       <div class="tv-left">
         <img src="assets/img/TheGuardian_Logo_VIE 3.png" alt="sword logo" class="tv-sword-large">
@@ -278,7 +278,7 @@
           </div>
 
           <div class="tv-submit-wrap">
-            <button class="tv-btn" type="submit">ĐĂNG KÝ</button>
+            <button class="tv-btn" type="submit"><a href="dang-ky.html" style="color: #233D4D;">ĐĂNG KÝ</a></button>
           </div>
         </form>
       </div>
@@ -292,10 +292,10 @@
         </div>
 
         <nav class="sep-nav">
-          <a href="#">TRANG CHỦ</a>
-          <a href="#">GIỚI THIỆU</a>
-          <a href="#">BẢNG XẾP HẠNG</a>
-          <a href="#">HỖ TRỢ</a>
+          <a href="index.html">TRANG CHỦ</a>
+          <a href="cam-nang.html">GIỚI THIỆU</a>
+          <a href="#rank">BẢNG XẾP HẠNG</a>
+          <a href="cskh.html">HỖ TRỢ</a>
         </nav>
 
         <div class="sep-socials">
@@ -311,7 +311,9 @@
 
     <div class="tv-bottom">
       <div class="b-center">Bản quyền thuộc về @VKENTERTAINMENTJSC.</div>
-      <div class="b-right"> <a href="assets/img/Chính sách bảo mật.pdf" style="color: #ECC689;">CHÍNH SÁCH QUYỀN RIÊNG TƯ</a> | <a href="assets/img/The Guardians_Điều khoản sử dụng.pdf" style="color: #ECC689;">ĐIỀU KHOẢN SỬ DỤNG</a></div>
+      <div class="b-right"> <a href="assets/img/Chính sách bảo mật.pdf" style="color: #ECC689;">CHÍNH SÁCH QUYỀN RIÊNG
+          TƯ</a> | <a href="assets/img/The Guardians_Điều khoản sử dụng.pdf" style="color: #ECC689;">ĐIỀU KHOẢN SỬ
+          DỤNG</a></div>
     </div>
   </footer>
   <!-- Scroll Top -->
@@ -334,84 +336,12 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/lang.js"></script>
-  <script>
-    const fileInput = document.getElementById('hd-file');
-    const dropZone = document.getElementById('hd-drop');
-    const previewContainer = document.getElementById('file-preview-container');
-    const fileCount = document.getElementById('file-count');
-    const triggerBtn = document.getElementById('hd-trigger');
-    const placeholder = document.getElementById('file-placeholder');
-
-    let currentFiles = [];
-
-    function formatFileSize(bytes) {
-      if (bytes < 1024) return bytes + ' bytes';
-      else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
-      else return (bytes / 1048576).toFixed(1) + ' MB';
-    }
-
-    function renderFileList() {
-      previewContainer.innerHTML = '';
-      currentFiles.forEach((file, index) => {
-        const fileDiv = document.createElement('div');
-        fileDiv.className = 'file-preview';
-        fileDiv.style.cssText = 'display:flex;align-items:center;margin-bottom:10px;border:1px solid #444;padding:8px;border-radius:6px;background:#222;';
-
-        fileDiv.innerHTML = `
-      <div style="margin-right:10px;font-size:20px;">📄</div>
-      <div style="flex:1;">
-        <div style="font-weight:bold;color:#fff;">${file.name}</div>
-        <div style="color:#aaa;font-size:13px;">${formatFileSize(file.size)}</div>
-      </div>
-      <div class="remove-btn" style="margin-left:10px;cursor:pointer;color:red;font-weight:bold;">✖</div>
-    `;
-
-        fileDiv.querySelector('.remove-btn').addEventListener('click', () => {
-          currentFiles.splice(index, 1);
-          updateFileInput();
-          renderFileList();
-        });
-
-        previewContainer.appendChild(fileDiv);
-      });
-
-      fileCount.textContent = `Tổng số file: ${currentFiles.length}`;
-
-      // Ẩn/hiện placeholder
-      placeholder.style.display = currentFiles.length > 0 ? 'none' : 'block';
-    }
-
-    function updateFileInput() {
-      const dataTransfer = new DataTransfer();
-      currentFiles.forEach(file => dataTransfer.items.add(file));
-      fileInput.files = dataTransfer.files;
-    }
-
-    fileInput.addEventListener('change', (e) => {
-      currentFiles = currentFiles.concat(Array.from(e.target.files));
-      updateFileInput();
-      renderFileList();
-    });
-
-    triggerBtn.addEventListener('click', () => fileInput.click());
-
-    dropZone.addEventListener('drop', (e) => {
-      e.preventDefault();
-      currentFiles = currentFiles.concat(Array.from(e.dataTransfer.files));
-      updateFileInput();
-      renderFileList();
-    });
-
-    // Khi click vào dropZone thì cũng ẩn placeholder
-    dropZone.addEventListener('click', () => {
-      placeholder.style.display = 'none';
-    });
-  </script>
+  
 
   <script>
     // ---- COUNTDOWN SCRIPT ----
     // Ngày đích (VD: 15/09/2025 20:00:00)
-    const targetDate = new Date("Sep 15, 2025 20:00:00").getTime();
+    const targetDate = new Date("Dec 25, 2025 20:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
